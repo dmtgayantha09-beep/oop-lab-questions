@@ -61,4 +61,22 @@ public abstract class StaffMember {
     }
     
     //staffCount is static because it belongs to the class, and it can be called using class name, no need a object
+    
+    //question 6
+     public void changeDepartment(String newDepartment){
+         if(newDepartment != null){
+             this.department = newDepartment;
+             System.out.println("Department updated successfully to: " + newDepartment);
+         }
+         else{
+             System.out.println("Department Not Changed");
+         }         
+     }
+     
+     //showCommonNotice() should print one common notice for all staff members
+     public final void showCommonNotice(){
+         System.out.println("Notice: All Members Must Participate to the Celebration");
+     }
+     
+     //changeDepartment() prevents empty values from being set directly from outside the class.
 }
