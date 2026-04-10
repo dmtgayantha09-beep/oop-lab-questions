@@ -14,11 +14,16 @@ public abstract class StaffMember {
     private final String staffId;
     protected String department;
     
+    //Question 5
+    private static int staffCount = 0;
+    public static final String System_Name = "University Staff Payment System";
+    
     //constructor
     public StaffMember(String fullName, String staffId, String department){
         this.fullName = fullName;
         this.staffId = staffId;
         this.department = department;
+        staffCount += 1;
     }
     
     //getters
@@ -45,4 +50,15 @@ public abstract class StaffMember {
     public abstract double calculateMonthlyPayment();
     
     //staffMember class is a parent class we do not create objects using this class
+    
+    //Question 5
+    public static void showSystemName(){
+        System.out.println(System_Name);
+    }
+    
+    public static int getStaffCount(){
+        return staffCount;
+    }
+    
+    //staffCount is static because it belongs to the class, and it can be called using class name, no need a object
 }

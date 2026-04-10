@@ -14,6 +14,8 @@ public class Lab04Main {
         //call UniversityPolicy.showPolicyHeader()
         UniversityPolicy.showPolicyHeader();
         
+        //call StaffMember.showSystemName()
+        StaffMember.showSystemName();
         
         //print the university name
         System.out.println("University Name: " + UniversityPolicy.UNIVERSITY_NAME);
@@ -21,6 +23,7 @@ public class Lab04Main {
         
         //create lecturer and lab assistant objects
         Lecturer lec01 = new Lecturer("Dr. Kasun Perera", "L001", "Computer Science", 8, 12500);
+        Lecturer lec02 = new Lecturer("Mr. Saman Gunarathna", "L002", "Physics", 12, 18500);        
         LabAssistant LabA01 = new LabAssistant("Mr. Chamara Sampath", "LA001", "Computer Science", 120, 850);
         
         
@@ -39,6 +42,10 @@ public class Lab04Main {
         
         //display Lab Assistant details
         LabA01.displayLabAssistant();
+        
+        //print the total number of created staff objects
+        System.out.println("Number of Staff Members: " + StaffMember.getStaffCount());
+        
         
     }
 }
