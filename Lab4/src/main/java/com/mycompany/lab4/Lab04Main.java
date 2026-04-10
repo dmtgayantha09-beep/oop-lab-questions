@@ -11,9 +11,6 @@ package com.mycompany.lab4;
 public class Lab04Main {
     public static void main(String[] args){
         
-        //call UniversityPolicy.showPolicyHeader()
-        UniversityPolicy.showPolicyHeader();
-        
         //call StaffMember.showSystemName()
         StaffMember.showSystemName();
         
