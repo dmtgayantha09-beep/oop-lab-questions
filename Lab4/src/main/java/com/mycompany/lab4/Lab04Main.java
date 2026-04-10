@@ -10,11 +10,17 @@ package com.mycompany.lab4;
  */
 public class Lab04Main {
     public static void main(String[] args){
-        //create a lecturer object
+        //create lecturer and lab assistant objects
         Lecturer lec01 = new Lecturer("Dr. Kasun Perera", "L001", "Computer Science", 8, 12500);
+        LabAssistant LabA01 = new LabAssistant("Mr. Chamara Sampath", "LA001", "Computer Science", 120, 850);
         
         //display the lecturer details
         lec01.displayLecturerDetails();
         System.out.println("Monthly Payment: " + lec01.calculateMonthlyPayment());
+        System.out.println("======================================");
+        
+        //display Lan Assistant details
+        LabA01.displayLabAssistant();
+        
     }
 }
