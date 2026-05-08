@@ -21,7 +21,6 @@ public class DeliveryChargeTest {
 
         System.out.println("Base + Express Delivery Charge: " + dc.calculateCharge(1000.0, true));
 
-        // This is compile-time polymorphism because Java chooses the correct overloaded
-        // calculateCharge method based on the number and type of parameters.
+        
     }
 }
