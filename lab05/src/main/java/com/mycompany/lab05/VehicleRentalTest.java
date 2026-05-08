@@ -11,8 +11,8 @@ package com.mycompany.lab05;
 public class VehicleRentalTest {
     public static void main(String[] args) {
 
-        Vehicle vehicle1 = new Car("CAR101", "Toyota", 3, 5000.0);
-        Vehicle vehicle2 = new Bike("BIKE202", "Honda", 6, 300.0);
+        Vehicle vehicle1 = new Car("CAR01", "Toyota", 3, 5000.0);
+        Vehicle vehicle2 = new Bike("BIKE02", "CT 100", 6, 300.0);
 
         System.out.println("----- Car Details -----");
         vehicle1.displayVehicleInfo();
