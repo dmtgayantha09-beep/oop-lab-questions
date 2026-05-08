@@ -24,8 +24,6 @@ public class VehicleRentalTest {
         vehicle2.displayVehicleInfo();
         System.out.println("Rental Cost: " + vehicle2.calculateRentalCost());
 
-        // This is runtime polymorphism because the Vehicle reference calls
-        // the overridden calculateRentalCost method based on the actual object type.
     }
 }
 
