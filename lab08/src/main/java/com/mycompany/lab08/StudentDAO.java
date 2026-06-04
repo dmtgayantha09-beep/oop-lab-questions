@@ -11,6 +11,7 @@ package com.mycompany.lab08;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.ResultSet;
 
 public class StudentDAO {
 
@@ -39,4 +40,36 @@ public class StudentDAO {
             System.out.println("Database Error");
         }
     }
+    
+    public void displayAllStudents() {
+
+    String sql =
+    "SELECT student_id, student_name, mark FROM students";
+
+    try {
+
+        Connection con =
+                StudentDatabaseConnection.getConnection();
+
+        PreparedStatement ps =
+                con.prepareStatement(sql);
+
+        ResultSet rs = ps.executeQuery();
+
+        while(rs.next()) {
+
+            System.out.println(
+                rs.getInt("student_id")
+                + " "
+                + rs.getString("student_name")
+                + " "
+                + rs.getInt("mark"));
+        }
+
+    }
+    catch(SQLException e) {
+        System.out.println("Database Error");
+        }
+    }
+    
 }
